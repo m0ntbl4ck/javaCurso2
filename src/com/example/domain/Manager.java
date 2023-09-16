@@ -1,6 +1,8 @@
 
 package com.example.domain;
 
+import java.util.Objects;
+
 /**
  *
  * @author mont_
@@ -22,6 +24,29 @@ public class Manager extends Empleado {
 
     public void setNombreDepartamento(String nombreDepartamento) {
         this.nombreDepartamento = nombreDepartamento;
+    }
+
+    
+    
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Manager other = (Manager) obj;
+        return (super.equals(other)&&Objects.equals(this.nombreDepartamento, other.nombreDepartamento));
+    }
+
+    @Override
+    public String toString() {
+        return super.toString()+"El departamento es: "+this.nombreDepartamento;
     }
     
     

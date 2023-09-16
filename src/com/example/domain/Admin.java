@@ -13,5 +13,6 @@ public class Admin extends Empleado {
     public Admin(String nombre, int empleadoID, double salario, String cargo) {
         super(nombre, empleadoID, salario, cargo);
     }
+ 
     
 }

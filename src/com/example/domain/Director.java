@@ -20,5 +20,22 @@ public class Director extends Manager {
     public void setPresupuesto(double presupuesto) {
         this.presupuesto = presupuesto;
     }
+
+   
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Director other = (Director) obj;
+        return (super.equals(other)&&Double.doubleToLongBits(this.presupuesto) == Double.doubleToLongBits(other.presupuesto));
+    }
     
 }
