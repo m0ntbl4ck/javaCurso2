@@ -6,6 +6,8 @@ package com.example.domain;
  * @author mont_
  */
 public class Director extends Manager {
+
+    
     
     private  double presupuesto;
     public Director(String nombre, int empleadoID, double salario, String cargo,String nombreDepartamento,double presupuesto) {
@@ -22,7 +24,10 @@ public class Director extends Manager {
     }
 
    
-
+    @Override
+    public String toString() {
+        return super.toString()+ " El presupuesto es: "+ this.getPresupuesto();
+    }
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {

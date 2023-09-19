@@ -13,6 +13,13 @@ public class Admin extends Empleado {
     public Admin(String nombre, int empleadoID, double salario, String cargo) {
         super(nombre, empleadoID, salario, cargo);
     }
+
+    @Override
+    public void MetodoAbstrat() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+   
  
     
 }

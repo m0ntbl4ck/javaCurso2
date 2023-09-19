@@ -2,18 +2,27 @@
 package com.example;
 
 import com.example.domain.Admin;
+import com.example.domain.Dias;
 import com.example.domain.Director;
+import com.example.domain.Doctor;
 import com.example.domain.Empleado;
 import com.example.domain.Engineer;
 import com.example.domain.Manager;
+import static java.lang.Math.*;
 
 /**
  *
  * @author mont_
  */
 public class TestMain {
+    
     public static void main(String[] args) {
-        Empleado empleado1= new Empleado("Andres Lopez",00001,23.23,"Administrador");
+        
+        abs(0);
+        random();
+        
+        
+        Empleado empleado1= new Admin("Andres Lopez",00001,23.23,"Administrador");
         
         Admin admin1 = new Admin("Jose Lopez",00002,23239.32,"Administrador");
         //tiene su espaco en memoria
@@ -29,7 +38,9 @@ public class TestMain {
         Empleado manager2= new Manager("Felipe Rodriguez",5,71839,"Manager","Recursos Humanos");
         
         
+        ((Manager)manager2).getNombreDepartamento();
         
+      
         
         empleado1.datosDeEmpleado();
         admin1.datosDeEmpleado();
@@ -50,7 +61,7 @@ public class TestMain {
         System.out.println(admin1.hashCode());
         System.out.println(admin2.hashCode());
         //colapso de metodos
-        System.out.println(empleado1.suma("Hola"," Mundo","!"));
+        System.out.println(empleado1.suma("Hola"," Mundo","!","","",""));
         
     
         
@@ -58,12 +69,18 @@ public class TestMain {
             System.out.print(i+",");
         }
         System.out.println();
+     
+        if(manager1 instanceof Manager){
+            ((Manager)manager1).getNombreDepartamento();
+        }
         
         
         ((Manager)manager2).getNombreDepartamento();
         
         
         Manager manager3 = ((Manager)manager2);
+        
+        
         manager3.getNombreDepartamento();
         
         manager2 = ((Manager)manager2);
@@ -93,5 +110,33 @@ public class TestMain {
          
        
          Empleado maanger10 = new Engineer ("Andrea Cortes",00004,1238213.3223,"Ingenierio");
+         
+         System.out.println(director1);
+         
+         //Instancia de una Clase miembro anidada
+        // Doctor doctor = new Doctor();
+         //Doctor.AgedarCitas cita = doctor.new AgedarCitas();
+         
+         //Instancia de una Clase estatica anidada
+         Doctor.AgedarCitas cita1= new Doctor.AgedarCitas();
+         
+         System.out.println(Dias.DOMINGO);
+         System.out.println(Dias.LUNES.getIngles());
+         System.out.println(Dias.DOMINGO.getIngles());
+         
+         String dia = Dias.SABADO.getIngles();
+         
+         switch(dia){
+             case "MONDAY":
+                 System.out.println("Hoy es :" +dia);
+             break;
+             case "SUNDAY":
+                 System.out.println("Hoy es :" +dia);
+                 break;
+             default:
+                 System.out.println("El dia no es correcto");
+         }
+         
     }
+    
 }

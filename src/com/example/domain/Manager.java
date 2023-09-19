@@ -46,8 +46,14 @@ public class Manager extends Empleado {
 
     @Override
     public String toString() {
-        return super.toString()+"El departamento es: "+this.nombreDepartamento;
+        return super.toString()+" El departamento es: "+this.nombreDepartamento;
     }
+
+    @Override
+    public void MetodoAbstrat() {
+        System.out.println("METODO ABSTRACTO");
+    }
+    
     
     
 }

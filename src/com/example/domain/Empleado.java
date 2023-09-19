@@ -7,7 +7,8 @@ import java.util.Objects;
  *
  * @author mont_
  */
-public class Empleado {
+public abstract class Empleado {
+ 
   private String nombre;
   private int empleadoID;
   private double salario;
@@ -23,7 +24,9 @@ public class Empleado {
         this.cargo = cargo;
     }
      //colapso de metodos
-    public String suma(String... nombres){
+    public  String suma(String... nombres){
+        
+        
         StringBuilder mensaje=new StringBuilder("");
         for(String nombre : nombres){
             
@@ -68,6 +71,8 @@ public class Empleado {
         this.cargo = cargo;
     }
             
+   public abstract void MetodoAbstrat();
+   
    
     public void datosDeEmpleado(){
         System.out.println("El nombre del empleado :" +getNombre());
