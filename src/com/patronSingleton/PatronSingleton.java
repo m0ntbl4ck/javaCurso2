@@ -1,5 +1,7 @@
 
-package com.example.domain;
+package com.patronSingleton;
+
+import com.example.domain.*;
 
 /**
  *

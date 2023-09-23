@@ -14,17 +14,27 @@ public class MainGenericos {
         //Los genericos son usados en las listas Colecciones 
         
         //clases Wrapper Integer, String, Double, Long, Character
-        List<Integer>  lista = new ArrayList<>();
+        List<String>  lista = new ArrayList();
         
-        lista.add(1);
-        lista.add(2);
+        lista.add("Juan");
+        lista.add("andres");
         
-        System.out.println(lista.get(0));
-        System.out.println(lista.get(1));
-        System.out.println(lista.getClass().getName());
+        System.out.println(lista);
+        
+        String[] array = lista.toArray(new String[lista.size()]);
         
         
-        Generico<Integer,Long> generico1 = new Generico(2,22L);
+        
+        
+      Generico<Integer,String> ejemploGenerico = new Generico(123,"camisa");
+      
+      Generico<Double,String> ejemploGenerico2 =new Generico(123,"CADENA");
+        
+      Integer numero = new Integer(12);
+        ejemploGenerico.metodoConGenericos(numero);
+        
+        System.out.println(ejemploGenerico.getNombre()); 
+        Generico<Integer,String> generico1 = new Generico(2,"sTRING");
         
         Generico<Integer,String> generico2 = new Generico(2,"cadena");
         

@@ -1,5 +1,5 @@
 
-package com.clasesanidades;
+package com.clasesanidadas;
 
 /**
  *
