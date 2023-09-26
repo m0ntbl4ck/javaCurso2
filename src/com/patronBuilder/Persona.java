@@ -17,6 +17,9 @@ public class Persona {
     private final LocalDate fechaDeNacimiento;
     private final String genero;
     private final String estadoCivil;
+    
+    
+    
 
 
 
@@ -31,7 +34,7 @@ public class Persona {
         this.estadoCivil = estadoCivil;
     }
    
- /* public Persona(Builder builder){
+ private Persona(Builder builder){
         this.nombre = builder.nombre;
         this.apellidos = builder.apellidos;
         this.documentoIdetidad = builder.documentoIdetidad;
@@ -52,14 +55,14 @@ public class Persona {
     private String genero;
     private String estadoCivil;
 
-    
-    
-   //Asingnan y retornan el valor
         public Persona.Builder nombre(String nombre) {
             this.nombre = nombre;
             return this;
         }
 
+    
+   //Asingnan y retornan el valor
+       
         public Persona.Builder apellidos(String apellidos) {
             this.apellidos = apellidos;
             return this;
@@ -103,7 +106,7 @@ public class Persona {
      
 
         
-    }*/
+    }
     
     
 }

@@ -10,8 +10,19 @@ import java.time.LocalDate;
 public class MainBuilder {
     public static void main(String[] args) {
         //problema de tener una clase con multiples atributos
-        Persona persona1 = new Persona("Juan","pEREZ","12312321",
-        );
+        
+        //Persna persona2 = new Persona("Juan","Perez")
+                
+        Persona persona1 = new Persona.Builder()
+                .nombre("Juan")
+                .apellidos("Perez")
+                .documentoIdetidad("12312313")
+                .genero("Masculino")
+                .fechaDeNacimiento(LocalDate.now())
+                .telefono("3123133123")
+                .estadoCivil("Soltero")
+                .email("Email@email.com")
+                .build();
         
       
         
