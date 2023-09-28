@@ -4,8 +4,6 @@
  */
 package com.streamsLambdas.practicaStreams.practica4;
 
-import com.streamsLambdas.practicaStreams.*;
-import static com.streamsLambdas.practicaStreams.Departamento.ANT;
 
 /**
  *

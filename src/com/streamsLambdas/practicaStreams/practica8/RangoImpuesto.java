@@ -1,5 +1,6 @@
 
-package com.streamsLambdas.practicaStreams.practica2;
+package com.streamsLambdas.practicaStreams.practica8;
+
 
 /**
  *

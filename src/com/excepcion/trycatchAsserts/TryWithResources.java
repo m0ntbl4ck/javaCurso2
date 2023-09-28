@@ -13,7 +13,7 @@ public class TryWithResources {
      public static void main(String[] args) {
         try (
             BufferedReader reader = new BufferedReader(new FileReader("files\\quijote.txt"));
-            BufferedReader reader1 = new BufferedReader(new FileReader("files\\texto1.txt"))
+            BufferedReader reader1 = new BufferedReader(new FileReader("files\\texto1.txt"));
         ) {
             String linea;
             System.out.println("FRAGMENTO DON QUIJOTE");

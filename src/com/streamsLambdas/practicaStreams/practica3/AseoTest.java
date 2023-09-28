@@ -19,11 +19,7 @@ public class AseoTest {
         
          List<VentasTxn> tLista = VentasTxn.createTxnList();
          System.out.println(tLista);
-            
-            
-        try{
-        
-            
+              
         
      Consumer<VentasTxn> reporteAseo =
              t -> System.out.printf("ID: "+ t.getTxnId()+" Vendedor: "+
@@ -35,7 +31,7 @@ public class AseoTest {
         
         
         tLista.stream()
-                .filter( t-> t.getCompradorNombre().equals("Aseo"))
+                .filter( t-> t.getCompradorNombre().equals("Aseo SA"))
                 .forEach(reporteAseo);
         
         System.out.println("Total transacciones: ");
@@ -64,10 +60,7 @@ public class AseoTest {
             reporteAseo.accept(tSmall.get());
         }
         
-        }
-        catch(NullPointerException e){
-            System.out.println(e.getMessage());
-        }
+       
     }
      
      

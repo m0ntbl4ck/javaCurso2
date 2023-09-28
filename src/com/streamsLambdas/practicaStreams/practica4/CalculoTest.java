@@ -13,7 +13,7 @@ public class CalculoTest {
     public static void main(String[] args) {
         
        List<VentasTxn> tList = VentasTxn.createTxnList();
-        System.out.println(tList);
+       System.out.println(tList);
         
         System.out.println("=== Total Transacciones ===");
        
@@ -38,6 +38,8 @@ public class CalculoTest {
             .sum();
         
         System.out.printf("Hogar CO: "+ t3);
+        
+        
         
      
         System.out.println("=== Average Conteo unidad ===");

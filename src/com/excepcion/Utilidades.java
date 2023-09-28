@@ -14,6 +14,8 @@ public class Utilidades {
    public void metodoDos() throws IOException{
        throw new IOException("Mi excepcion no chequeada");
    }
+   
+   
    public void metodoTres() {
        System.out.println("metodo tres");
    }

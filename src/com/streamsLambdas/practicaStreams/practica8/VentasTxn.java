@@ -1,5 +1,6 @@
 
-package com.streamsLambdas.practicaStreams;
+package com.streamsLambdas.practicaStreams.practica8;
+
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -240,7 +241,7 @@ public class VentasTxn {
       new VentasTxn.Builder()
             .txnId(11)
             .personaVenta("Andres Martinez")
-            .comprador(mapaComprador.get("Electrronics"))
+            .comprador(mapaComprador.get("Electronics"))
             .producto("Smarth Watch")
             .tipoDepago("Efectivo")
             .preciounidad(20)
@@ -255,7 +256,7 @@ public class VentasTxn {
       new VentasTxn.Builder()
             .txnId(12)
             .personaVenta("Andres Martinez")
-            .comprador(mapaComprador.get("Electrronics"))
+            .comprador(mapaComprador.get("Electronics"))
             .producto("Smarth Watch Pro")
             .tipoDepago("Efectivo")
             .preciounidad(40)

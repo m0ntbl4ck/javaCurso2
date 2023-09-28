@@ -5,8 +5,7 @@
 package com.excepcion;
 
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
 
 /**
  *
@@ -24,7 +23,7 @@ public class ExcepcionesyErrores {
               util.metodoDos();
             
            
-        } catch (IOException ex) {
+        } catch (IOException ex  ){
             System.out.println(ex.getMessage());
         } catch (IllegalArgumentException e){
             System.out.println("Error de Tipo RUntimeException"+e.toString());

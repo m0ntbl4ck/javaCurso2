@@ -9,10 +9,10 @@ import java.time.LocalDate;
  */
 public class EjemploAsserts {
     public static void main(String[] args) {
-        int edad = 25;
+        int edad =0;
 
         // Utilizamos assert para verificar si la edad es mayor o igual a 18
-        assert edad >= 18 : "La persona es menor de edad";
+        assert edad >= 1 &&edad <=110 : "La persona no tiene una edad valida";
 
         
         
@@ -20,7 +20,7 @@ public class EjemploAsserts {
         
         
         
-        LocalDate fecha = LocalDate.of(2023, 9, 26);
+        LocalDate fecha = LocalDate.of(2023, 12, 26);
 
         verificarFecha(fecha);
 

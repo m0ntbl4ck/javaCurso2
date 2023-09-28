@@ -1,5 +1,5 @@
 
-package com.streamsLambdas.practicaStreams.practica3;
+package com.streamsLambdas.practicaStreams.practica5;
 
 
 import java.util.HashMap;

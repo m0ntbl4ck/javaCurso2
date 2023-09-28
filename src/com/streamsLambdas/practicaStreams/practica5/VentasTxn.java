@@ -1,5 +1,5 @@
 
-package com.streamsLambdas.practicaStreams.practica3;
+package com.streamsLambdas.practicaStreams.practica5;
 
 
 import java.time.LocalDate;
@@ -157,8 +157,6 @@ public class VentasTxn {
     public String getCompradorNombre(){
         return comprador.getNombre();
     }
-    
-    
     public double getRangoDeImpuesto(){
         return RangoImpuesto.porDepartamento(this.getDepartamento());
     }

@@ -11,7 +11,7 @@ import java.io.IOException;
  */
 public class TryCatchClasico {
     public static void main(String[] args) {
-        BufferedReader reader = null;
+        BufferedReader reader = null; //txt
         BufferedReader reader1 = null;
         
         
@@ -27,7 +27,9 @@ public class TryCatchClasico {
             while ((linea = reader.readLine()) != null) {
                 System.out.println(linea);
             }
+            
             System.out.println("\n");
+            
             reader1 = new BufferedReader(new FileReader("files\\texto1.txt"));
             System.out.println("FRAGMENTO LOREM IPSUM");
             System.out.println();
@@ -36,16 +38,23 @@ public class TryCatchClasico {
             }
         } catch (IOException e) {
             // Maneja la excepción en caso de error de lectura
-            e.getMessage();
+            System.out.println(e.getMessage());
+            
         } finally {
             try {
                 // Cierra el archivo en el bloque finally para asegurarse de que siempre se cierre
+                 if(reader != null){
+                     
                  
                     reader.close();
-                    reader1.close();
+                    
+                    }
+                 if(reader1 != null){
+                     reader1.close();
+                 }
             } catch (IOException e) {
                 // Maneja la excepción en caso de error al cerrar el archivo
-                System.out.println("Erros de salida"+e.getMessage()); 
+                System.out.println("Erros de salida "+e.getMessage()); 
             }
         }
     }
