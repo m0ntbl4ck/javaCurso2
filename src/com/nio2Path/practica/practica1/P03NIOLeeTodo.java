@@ -20,7 +20,7 @@ public class P03NIOLeeTodo {
     public static void main(String[] args) {
         
         List<String> fileArr;
-        Path file =  Paths.get("archivos//hamlet.txt");
+        Path file =  Paths.get("files//hamlet.txt");
 
         try {
             fileArr = Files.readAllLines(file);

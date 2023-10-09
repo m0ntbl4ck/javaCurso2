@@ -12,7 +12,7 @@ import java.util.stream.Stream;
  */
 public class P04NIOLeerTodo {
     public static void main(String[] args) {
-        Path archivo = Paths.get("archivos//hamlet.txt");
+        Path archivo = Paths.get("files//hamlet.txt");
         List<String> lineasArchivo;
 
         try {
@@ -24,14 +24,18 @@ public class P04NIOLeerTodo {
                 .filter(palabra -> palabra.contains("lord"))
                 .peek(palabra -> System.out.println(palabra))
                 .count();
+            
             System.out.println("Cantidad de veces: " + cuentaLord);
 
             System.out.println("\n=== Contar 'Prison' ===");
+            
             long cuentaPrison = lineasArchivo.stream()
                 .flatMap(linea -> Stream.of(linea.split(" ")))
-                .filter(palabra -> palabra.contains("prison"))
+               .filter(palabra -> palabra.contains("prison") || palabra.equalsIgnoreCase("prison,"))
                 .peek(palabra -> System.out.println(palabra))
                 .count();
+            
+            
             System.out.println("Cantidad de veces: " + cuentaPrison);
 
         } catch (IOException e) {

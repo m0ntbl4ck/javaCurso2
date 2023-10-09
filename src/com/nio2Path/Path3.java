@@ -25,7 +25,7 @@ System.out.println("¿Es un directorio? " + isDirectory);
 
 
 
-Path filePath2 = Paths.get("archivos//archivo.txt");
+Path filePath2 = Paths.get("files//archivo.txt");
 
 // Lectura de todo el contenido del archivo
 try {
